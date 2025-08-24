@@ -9,6 +9,10 @@ public final class TicketTypeRequest {
     private final int noOfTickets;
     private final Type type;
 
+    public enum Type {
+        ADULT, CHILD, INFANT
+    }
+
     public TicketTypeRequest(Type type, int noOfTickets) {
 
         if (type == null) {
@@ -30,8 +34,6 @@ public final class TicketTypeRequest {
         return type;
     }
 
-    public enum Type {
-        ADULT, CHILD , INFANT
-    }
+
 
 }
